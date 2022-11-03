@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-cli-app",
+  "version": "1.0.0",
+  "description": "cli app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "start:dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiia-Svechnikova/nodejs-cli-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasiia-Svechnikova/nodejs-cli-app/issues"
+  },
+  "homepage": "https://github.com/Anastasiia-Svechnikova/nodejs-cli-app#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
