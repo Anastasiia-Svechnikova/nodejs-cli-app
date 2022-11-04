@@ -1,17 +1,17 @@
 const fs = require("fs").promises;
-const {uid} = require('uid')
 const path = require("node:path");
 const contactsPath = path.resolve("db/contacts.json");
+const {uid} = require('uid')
 
 
-// logs all contacts as a table
+// log all contacts as a table
 function listContacts() {
 
   getAllContacts().then(console.table).catch(console.log);
 }
 
-// receives contactsId from cl as process.argv 
-//  logs one contact which id matches the contactsId
+// receive contactsId from cl as process.argv 
+// log one contact which id matches the contactsId
 function getContactById(contactId) {
   getAllContacts()
     .then((data) => console.table(data.find(({ id }) => id === contactId)))
@@ -47,7 +47,7 @@ function addContact(name, email, phone) {
 }
 
 
-// gets all contacts from db/contacts.json and parses them
+// get all contacts from db/contacts.json and parses them
 async function getAllContacts() {
   try {
     const data = await fs.readFile(contactsPath, { encoding: "utf8" });
@@ -61,7 +61,6 @@ async function getAllContacts() {
 function errorFirstCallback(err) {
   if (err) {
     throw err;
-    console.log("The file has been saved!");
   }
 }
 

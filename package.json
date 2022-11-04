@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Anastasiia-Svechnikova/nodejs-cli-app#readme",
   "dependencies": {
+    "commander": "^9.4.1",
     "uid": "^2.0.1"
   }
 }
