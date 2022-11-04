@@ -1,11 +1,11 @@
 {
   "name": "nodejs-cli-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "cli app",
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "start:dev": "nodemon index.js",
+    "start:dev": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,7 @@
     "url": "https://github.com/Anastasiia-Svechnikova/nodejs-cli-app/issues"
   },
   "homepage": "https://github.com/Anastasiia-Svechnikova/nodejs-cli-app#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.20"
+  "dependencies": {
+    "uid": "^2.0.1"
   }
 }
